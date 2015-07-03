@@ -1,6 +1,6 @@
 FROM ubuntu:15.04
 
-ENV TERM=linux
+ENV TERM linux
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get -y install software-properties-common
 RUN add-apt-repository -y ppa:hvr/ghc

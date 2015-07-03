@@ -15,3 +15,5 @@ RUN apt-get -y install build-essential zlib1g-dev libmysqlclient-dev libpq-dev
 
 # Install yesod
 RUN cabal update && cabal install yesod yesod-bin persistent-sqlite yesod-static
+
+CMD ["/opt/ghc/7.8.4/bin/ghci"]
